@@ -78,7 +78,7 @@ class ContactDelete(ContactMixin, DeleteView):
         if not obj.owner == self.request.user:
             raise Http404
         account = Account.objects.get(id=obj.account.id)
-        self.account.owner = account
+        self.account = account
         return obj
 
     def get_success_url(self):
