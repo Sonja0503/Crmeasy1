@@ -54,12 +54,14 @@ function resetForm($form) {
 // Main App
 $(document).ready(function() {
 
+
     // Account - Use AJAX to get the Account Edit form and
     // display it on the page w/out a refresh
     $('#gi-container').delegate('.edit-account', 'click', function(e) {
         e.preventDefault();
         $('#gi-container').load($(this).attr('href'));
     });
+
     // Contact - Use AJAX to get the Contact Add form
     $('#cd-container').delegate('#new-contact', 'click', function(e) {
         e.preventDefault();
@@ -73,6 +75,7 @@ $(document).ready(function() {
     $('#cd-container').delegate('.edit-contact', 'click', function(e) {
         e.preventDefault();
         var that = $(this);
+        console.log($(this).attr('href'));
         $.get($(this).attr('href'), function(data) {
             $('#new-contact').hide();
             that.parent().parent().remove();
@@ -99,5 +102,58 @@ $(document).ready(function() {
         $(this).remove(); // Remove the form
     });
 
+    // Communications - When the Subject of the form is clicked, the whole form is displayed
+    $('#co-container').delegate('#id_subject', 'focus', function() {
+        console.log($(this));
+        $('#comm-form-internals').show();
+    });
+
+    // Communications - Use AJAX to get the Communications Add Form
+    $('#co-container').delegate('#new-comm', 'click', function(e) {
+        e.preventDefault();
+        console.log($(this).attr('href'));
+        $.get($(this).attr('href'), function(data) {
+            $('#co-list').prepend(data);
+        })
+    });
+
+
+    // Communications - Use AJAX to get the Comm Edit Form
+    $('#co-container').delegate('.comm-edit', 'click', function(e) {
+        e.preventDefault();
+        var that = $(this);
+        console.log($(this).attr('href'));
+        $.get($(this).attr('href'), function(data) {
+            $('#co-body').find('#comm-form').remove();
+            $('#co-form-wrapper').append(data);
+            console.log($('#comm-form-internals'));
+            $('#comm-form-internals').show();
+            that.parent().parent().parent().remove();
+        })
+    });
+
+
+    // Communications - Use AJAX to save the Comm Add Form
+    $().delegate('#comm-form', 'submit', function(e) {
+        e.preventDefault();
+        var form = $('#comm-form');
+        var url = form.attr('action');
+        $.post(url, form.serialize(), function(data) {
+            if ($(data).find('#comm-form-internals').html()) {
+                // If form comes back then display it properly
+                form.remove();
+                $('#co-form-wrapper').prepend(data); // Appends the newly created Communication
+                $('#comm-form-internals').show(); // Make sure it shows
+                $('#comm-form').attr('action', '/comm/new/'); // Make sure the action is set to new
+            } else {
+                // When is this supposed to kick in?
+                resetForm($('#comm-form')); // Resets the form values
+                $('#comm-form').find('ul').remove(); // If there are any errors on the form, remove them all
+                $('#comm-form-internals').hide(); // Hides everything but the subject
+                $('#co-list').prepend(data); // Appends the newly created Communication
+                $('#comm-form').attr('action', '/comm/new/'); // Make sure the action is set to new
+            }
+        })
+    });
 
 });

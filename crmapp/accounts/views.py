@@ -9,6 +9,8 @@ from django.core.urlresolvers import reverse
 from .models import Account
 from django.shortcuts import get_object_or_404
 from crmapp.contacts.models import Contact
+from crmapp.communications.models import Communication
+from crmapp.communications.forms import CommunicationForm
 
 # Klasa koja nasljeduje ListView klasu
 class AccountList(ListView):
@@ -66,15 +68,17 @@ def account_detail(request, uuid):
 
     # ako je duzina 22 instanca bla dohvaca uuid
     else:
-        bla = Account.objects.get(uuid=uuid)
+        account = Account.objects.get(uuid=uuid)
         # ako owner uuid nije jednak useru vrati error
-        if bla.owner != request.user:
+        if account.owner != request.user:
             return HttpResponseForbidden()
     # instanca na klasu Contact gdje je account kljuc na tablicu user
     # filtriraj objekte po id ili uuid(ovisi jel bio if ili else)
-    contacts = Contact.objects.filter(account=bla)
+    contacts = Contact.objects.filter(account=account)
+    communications = Communication.objects.filter(account=account).order_by('-created_on')
+    form = CommunicationForm()
     # dictionary koje cemo koristiti u kreiranju URL-a
-    variables = {'account': bla, 'contacts': contacts}
+    variables = {'account': account, 'contacts': contacts, 'communications': communications, 'form': form}
     # vrati zahtijev usera(po id-u ili uuid-u), HTML zapis o detaljima i kontakte koji pripadaju tom useru
     return render(request, 'accounts/account_detail.html', variables)
 
