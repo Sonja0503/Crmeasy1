@@ -1,0 +1,13 @@
+<tr>
+    <td class="ci-td-p-l">{{ item.name }}</td>
+    <td>{{ item.item_type }}</td>
+
+
+    <td class="ci-td-p-r">
+        {# Item Delete Link #}
+        <br>
+        <a class="cancel" href="{{ item.get_delete_url }}"></a>
+        <a class="pen" href="{{ item.get_update_url }}"></a>
+        <br>
+    </td>
+</tr>

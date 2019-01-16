@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Item List{% endblock title %}
+
+{% block content %}
+    <div id="content-container" class="container p-none">
+        <div id="al-container" class="side-p">
+             <div id="al-control">
+                <h3 class="ad-mh">Item List</h3>
+                {# Add Item Link #}
+                <span class="pull-right">
+                    <a href="{% url 'item_new' %}"
+                       class="btn btn-link p-r-none">+ Add New Item</a>
+                </span><br>
+             </div>
+                 {# List of Item #}
+                <ul id="al-group" class="strip-list">
+                    {% for item in storage %}
+                        {% include 'item_storage/storage_item_view.html' %}
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>
+{% endblock content %}
