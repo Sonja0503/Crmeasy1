@@ -5,7 +5,9 @@ from crmapp.accounts.models import Account
 
 from shortuuidfield import ShortUUIDField
 
+
 class Communication(models.Model):
+
     uuid = ShortUUIDField(unique=True)
     TYPE_LIST = (
         (1, 'Meeting'),
