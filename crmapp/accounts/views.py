@@ -89,7 +89,7 @@ def account_cru(request, uuid=None):
     if uuid:
         # dohvati Account ili ako uuid ne postoji vrati gresku
         account = get_object_or_404(Account, uuid=uuid)
-        # ako owner nije jednak useru varti gresku
+        # ako owner nije jednak useru vrati gresku
         if account.owner != request.user:
             return HttpResponseForbidden()
     else:
