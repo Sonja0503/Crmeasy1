@@ -62,6 +62,7 @@ INSTALLED_APPS = (
     'crmapp.contacts',
     'crmapp.communications',
     'crmapp.storage_app',
+    'crmapp.blog'
 
 
 )

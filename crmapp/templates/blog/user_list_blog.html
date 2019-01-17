@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Blog List{% endblock title %}
+
+{% block content %}
+    <div id="content-container" class="container p-none">
+        <div id="al-container" class="side-p">
+             <div id="al-control">
+                <h3 class="ad-mh">BlogList</h3>
+                {# Add Item Link #}
+                <span class="pull-right">
+                    <a href="{% url 'blog_new' %}"
+                       class="btn btn-link p-r-none">+ Add New Blog</a>
+                </span><br>
+             </div>
+                 {# List of Blog #}
+                <ul id="al-group" class="strip-list">
+                    {% for item in blog %}
+                        {% include 'blog/blog_view.html' %}
+                    {% endfor %}
+                </ul>
+        </div>
+    </div>
+{% endblock content %}

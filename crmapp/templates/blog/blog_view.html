@@ -1,0 +1,13 @@
+
+<td>
+    <td><h3 class="ci-td-p-l"><a href="">{{ item.title }}</a>
+    {% if item.blogger = user %}
+
+        <td class="con-cntrl"><a class="pen edit-contact olovka"  href="{{ item.get_update_url }}"></a></td>
+        <td class="ci-td-p-r"><a class="cancel x" href="{{ item.get_delete_url }}"></a></td>
+            <br>{% endif %}
+    </h3></td>
+    <td><a href="{{ item.get_absolute_url }}" class="bloguser">{{ item.blogger.username }}</a></td>
+    <td><span class="blogdata">{{ item.created_on }}</span></td>
+    <td><span class="blogtext">{{ item.text_area }}</span></td>
+</td>

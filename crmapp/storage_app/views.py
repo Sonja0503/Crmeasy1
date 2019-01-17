@@ -90,6 +90,7 @@ class ItemDelete(DeleteView):
     def get_object(self, queryset=None):
         obj = super(ItemDelete, self).get_object()
         return obj
+
     # metoda koja prebacuje na URL 'item_list'
     def get_success_url(self):
         return reverse('item_list')

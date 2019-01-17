@@ -632,3 +632,29 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-radius: 25px;
 
 }
+
+.olovka {
+    float: right;
+}
+
+.x {
+    float: right;
+}
+
+.bloguser {
+    color: blue;
+    margin-left: 40px;
+}
+
+.blogdata {
+    color: green;
+    float: right;
+}
+
+.blogtext {
+    float: right;
+    margin-right: 190px;
+}
+
+
+

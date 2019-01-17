@@ -5,6 +5,7 @@ from accounts.urls import account_urls
 from contacts.urls import contact_urls
 from communications.urls import comm_urls
 from storage_app.urls import item_urls
+from blog.urls import blog_urls
 
 
 admin.autodiscover()
@@ -19,6 +20,7 @@ urlpatterns = patterns('',
     url(r'^storage_app/', include(item_urls)),
     url(r'^contact/', include(contact_urls)),
     url(r'^comm/', include(comm_urls)),
+    url(r'^blog/', include(blog_urls)),
     url(r'^admin/', include(admin.site.urls)),
 
 )
