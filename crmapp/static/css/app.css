@@ -640,7 +640,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .olovka {
     float: right;
-    
+
 }
 
 .x {
@@ -671,6 +671,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #ok {
     border: 1px solid mediumseagreen;
     background: radial-gradient(circle, lightblue, white);
+}
+
+.bloglisttitle {
+    text-align: center;
+    color: lightblue;
 }
 
 

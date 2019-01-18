@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc029d9-0196-4b5b-887e-44038b38caa1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crmapp/static/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/static/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crmapp/templates/blog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/templates/blog/blog_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crmapp/templates/blog/blog_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/templates/blog/blog_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,18 +45,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crmapp/storage_app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmapp/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="398">
               <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -66,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmapp/static/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="642" column="4" selection-start-line="642" selection-start-column="4" selection-end-line="642" selection-end-column="4" />
+            <state relative-caret-position="276">
+              <caret line="672" column="56" selection-start-line="672" selection-start-column="56" selection-end-line="672" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -87,8 +77,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/blog_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+            <state relative-caret-position="105">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -158,7 +157,6 @@
         <option value="$PROJECT_DIR$/crmapp/accounts/forms.py" />
         <option value="$PROJECT_DIR$/crmapp/templates/blog/blog_detail.html" />
         <option value="$PROJECT_DIR$/crmapp/storage_app/forms.py" />
-        <option value="$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html" />
         <option value="$PROJECT_DIR$/crmapp/storage_app/views.py" />
         <option value="$PROJECT_DIR$/crmapp/templates/blog/blog_cru.html" />
         <option value="$PROJECT_DIR$/crmapp/blog/models.py" />
@@ -169,6 +167,7 @@
         <option value="$PROJECT_DIR$/crmapp/templates/blog/blog_view.html" />
         <option value="$PROJECT_DIR$/crmapp/templates/blog/blog_list.html" />
         <option value="$PROJECT_DIR$/crmapp/static/css/app.css" />
+        <option value="$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html" />
       </list>
     </option>
   </component>
@@ -199,7 +198,7 @@
               <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
               <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
@@ -656,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crmapp/storage_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -690,16 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crmapp/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crmapp/templates/accounts/account_item_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -714,10 +696,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/blog_list.html">
+    <entry file="file://$PROJECT_DIR$/crmapp/static/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        <state relative-caret-position="276">
+          <caret line="672" column="56" selection-start-line="672" selection-start-column="56" selection-end-line="672" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crmapp/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -738,10 +730,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crmapp/static/css/app.css">
+    <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/blog_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="642" column="4" selection-start-line="642" selection-start-column="4" selection-end-line="642" selection-end-column="4" />
+        <state relative-caret-position="105">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
         </state>
       </provider>
     </entry>
