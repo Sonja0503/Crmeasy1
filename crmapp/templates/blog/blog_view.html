@@ -1,13 +1,17 @@
 
-<td>
-    <td><h3 class="ci-td-p-l"><a href="">{{ item.title }}</a>
+<tr>
+    <th class="ci-td-p-l vecaslova"><a href="">{{ item.title }}</a></th>
     {% if item.blogger = user %}
+    <th colspan="2"><a class="cancel x" href="{{ item.get_delete_url }}"></a>
+                    <a class="pen edit-contact olovka"  href="{{ item.get_update_url }}"></a></th>
 
-        <td class="con-cntrl"><a class="pen edit-contact olovka"  href="{{ item.get_update_url }}"></a></td>
-        <td class="ci-td-p-r"><a class="cancel x" href="{{ item.get_delete_url }}"></a></td>
-            <br>{% endif %}
-    </h3></td>
+    {% endif %}
+
+</tr>
+<tr>
     <td><a href="{{ item.get_absolute_url }}" class="bloguser">{{ item.blogger.username }}</a></td>
-    <td><span class="blogdata">{{ item.created_on }}</span></td>
-    <td><span class="blogtext">{{ item.text_area }}</span></td>
-</td>
+    <td><p class="sredina">{{ item.text_area }}</p></td>
+    <td><p class="blogdata">{{ item.created_on }}</p></td>
+</tr>
+
+

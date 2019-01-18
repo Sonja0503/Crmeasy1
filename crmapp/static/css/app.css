@@ -618,6 +618,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 0;
     list-style-type: none;
 }
+
 .my-form-control {
     display: block;
     width: 100%;
@@ -630,11 +631,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: #ededed;
     border: 1px solid #cccccc;
     border-radius: 25px;
+}
+
+#ok {
+    width: 100%;
 
 }
 
 .olovka {
     float: right;
+    
 }
 
 .x {
@@ -647,14 +653,30 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .blogdata {
-    color: green;
+    color: mediumseagreen;
     float: right;
+    border: 1px solid green;
 }
 
-.blogtext {
-    float: right;
-    margin-right: 190px;
+.sredina {
+    text-align: center;
+    border: 1px solid green;
 }
+
+.vecaslova {
+    font-size: 30px;
+    opacity:hover;
+}
+
+#ok {
+    border: 1px solid mediumseagreen;
+    background: radial-gradient(circle, lightblue, white);
+}
+
+
+
+
+
 
 
 

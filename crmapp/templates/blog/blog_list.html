@@ -14,9 +14,11 @@
              </div>
                  {# List of Blog #}
                 <ul id="al-group" class="strip-list">
+                    <table id="ok">
                     {% for item in blog %}
                         {% include 'blog/blog_view.html' %}
                     {% endfor %}
+                    </table>
                 </ul>
 
         </div>
