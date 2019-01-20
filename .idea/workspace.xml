@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bc029d9-0196-4b5b-887e-44038b38caa1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/crmapp/static/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/static/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crmapp/templates/blog/blog_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/templates/blog/blog_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html" afterDir="false" />
-    </list>
+    <list default="true" id="7bc029d9-0196-4b5b-887e-44038b38caa1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,18 +10,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crmapp/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="853">
-              <caret line="57" column="57" selection-start-line="57" selection-start-column="57" selection-end-line="57" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/blog_view.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,11 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crmapp/templates/blog/user_list_blog.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -194,52 +187,6 @@
               <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
               <item name="crmapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crmeasy1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crmeasy1" type="462c0819:PsiDirectoryNode" />
-              <item name="crmapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="contacts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -300,9 +247,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1636" y="-1015" width="1781" height="947" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.19375" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.19375" />
       <window_info id="Structure" order="1" sideWeight="0.50088185" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -313,7 +259,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33567253" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33567253" />
       <window_info anchor="bottom" id="Python Console" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -341,13 +287,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crmapp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crmapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -741,6 +680,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="90" />
         </state>
       </provider>
     </entry>
